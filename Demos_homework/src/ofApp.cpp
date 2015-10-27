@@ -2,7 +2,7 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    ofSetCircleResolution(1200);
+    ofSetCircleResolution(120);
     
     rectWidth = 199;
     rectHeight = 109;
