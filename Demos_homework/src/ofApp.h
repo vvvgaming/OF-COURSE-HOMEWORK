@@ -21,5 +21,11 @@ class ofApp : public ofBaseApp{
     
     float rectWidth;
     float rectHeight;
+    float x;
+    ofColor barColor;
+    ofColor circle1Color;
+    ofColor circle2Color;
+    ofColor circle3Color;
+
 		
 };

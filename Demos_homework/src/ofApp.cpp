@@ -6,8 +6,10 @@ void ofApp::setup(){
     
     rectWidth = 199;
     rectHeight = 109;
-    //rect1Width = 107;
-    
+    barColor.set(0,0,255);
+    circle1Color.set(39, 39, 37);
+    circle2Color.set(39, 39, 38);
+    circle3Color.set(35, 39, 47);
 
 
 
@@ -15,6 +17,7 @@ void ofApp::setup(){
 
 //--------------------------------------------------------------
 void ofApp::update(){
+    
 
 }
 
@@ -22,28 +25,29 @@ void ofApp::update(){
 void ofApp::draw(){
     
     ofFill();
+    ofSetColor(barColor);
     
     
     ofRect(11, 15, 413, 613);
-    ofSetColor(39, 39, 37);  //ALL
+    ofSetColor(circle1Color);  //ALL
     
     ofRect(118, 15, rectWidth, rectHeight);
     ofSetColor(37, 39, 40);   //A
     
     ofRect(11, 224, 107, 214);
-    ofSetColor(39, 39, 38);   //B
+    ofSetColor(circle2Color);   //B
     
     //ofRect(118, 518, rect1Width, 214);
     //ofSetColor(39, 39, 38);  //B
     
     ofRect(118, 518, 199, 109);
-    ofSetColor(39, 39, 38);  //C
+    ofSetColor(circle2Color);  //C
     
     //ofRect(118, 518, rectWidth, rectHeight);
     //ofSetColor(39, 39, 38);  //C
     
     ofRect(317, 224, 107, 214);
-    ofSetColor(35, 39, 47);   //D
+    ofSetColor(circle3Color);   //D
     
     
     
