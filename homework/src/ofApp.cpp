@@ -3,36 +3,42 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     
-    ofBackground(255,250,250);
+    ofSetFrameRate(100);
+    ofSetCircleResolution(100);
+    ofBackground(0);
     ofSetBackgroundAuto(false);
-    
+        
 
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
     
-   }
+    color.set( ofRandom(255), ofRandom(255), ofRandom(255));
+    
+    x = ofRandom( ofGetWidth());
+    
+    y = ofRandom( ofGetHeight());
+    
+    
+
+    
+    
+    
+}
 
 //--------------------------------------------------------------
 void ofApp::draw(){
     
+    ofSetColor(color);
+    ofFill();
+    ofCircle( x, y, ofRandom(8));
     
-    drawCircle(mouseX,mouseY);
-    radius = ofRandom(0,19);
-    
-    
-    //ofTranslate(ofGetWidth()/2,ofGetHeight()/2);
-    //zuo biao ju zhong
-    
-    
-    
-
 }
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-
+    
 }
 
 //--------------------------------------------------------------
@@ -47,7 +53,6 @@ void ofApp::mouseMoved(int x, int y ){
 
 //--------------------------------------------------------------
 void ofApp::mouseDragged(int x, int y, int button){
-    
 
 }
 
@@ -74,11 +79,4 @@ void ofApp::gotMessage(ofMessage msg){
 //--------------------------------------------------------------
 void ofApp::dragEvent(ofDragInfo dragInfo){ 
 
-}
-
-//--------------------------------------------------------------
-void ofApp::drawCircle(int x,int y){
-    ofSetColor(39,31,40,250);
-    ofCircle(x,y,radius);
-    
 }

@@ -18,9 +18,9 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
-    
-        void drawCircle(int x, int y);
-        float  radius;
 
+        int x;
+        int y;
+        ofColor color;
 		
 };
