@@ -38,13 +38,23 @@ void ofApp::update(){
 void ofApp::draw(){
     
     ofSetColor(186, 190, 167);
+    float stringWidth = Chalkduster.stringWidth("I'M A MAN");
+    float stringHeight = Chalkduster.stringHeight("I'M A MAN");
     
-    Chalkduster.drawString("I'M A MAN", ofGetHeight()/2,ofGetWidth()/2);
     
+   // Chalkduster.drawString("I'M A MAN", ofGetHeight()/2,ofGetW  idth()/2);
+    
+    
+    Chalkduster.drawString("I'M A MAN", ofGetWidth()/2-stringWidth/2,ofGetHeight()/2+stringHeight/2);
+    
+    
+    
+//    ofNoFill();
+//    ofCircle(ofGetWidth()/2,ofGetHeight()/2, 25);//que li zhong xin ;
     
     ofSetColor(255);
     
-    myImage.draw(415, 343, 62, 62);
+    myImage.draw(314, 233, 64, 64);
 
 }
 

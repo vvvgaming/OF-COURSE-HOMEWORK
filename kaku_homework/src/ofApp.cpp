@@ -46,6 +46,7 @@ void ofApp::keyPressed(int key){
         myVideo.setFrame(preFrame);
         
     }
+    
     if (key == OF_KEY_RIGHT){
         int nextFrame = myVideo.getCurrentFrame() + 1;
         myVideo.setFrame(nextFrame);

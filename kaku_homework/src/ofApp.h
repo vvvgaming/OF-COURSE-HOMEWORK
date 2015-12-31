@@ -20,5 +20,9 @@ class ofApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
     
     ofVideoPlayer myVideo;
+    my Panel.Set up();
+    my Panel
+    
+    
     
 };
